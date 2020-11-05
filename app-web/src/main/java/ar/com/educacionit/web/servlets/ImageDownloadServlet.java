@@ -52,7 +52,7 @@ public class ImageDownloadServlet extends HttpServlet {
     }
     
     private ObjetoImagenDto buildObjetoDto() throws IOException {
-		String urlImagen = "https://www.com.ar/sicame/api/files/download?url=/sicame/2020/cautelares/acta_1_500e17c1-71d0-4447-ba49-677a1b3f4d76.jpg";
+		String urlImagen = "https://infracciones.boldt.com.ar/sicame/api/files/download?url=/sicame/2020/cautelares/acta_1_500e17c1-71d0-4447-ba49-677a1b3f4d76.jpg";
 		ObjetoImagenDto imagen = new ObjetoImagenDto();
 		imagen.setNombreArchivo("Pago");
 		imagen.setDatos(obtenerArchivoExterno(urlImagen));
